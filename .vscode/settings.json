@@ -1,0 +1,34 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "nohaycolor.es",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "NOHAYCOLOR",
+            "database": "n0h4yc0l0r_pk_ipr4g",
+            "username": "n0h4yc0l0r_pk_nsxzh"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "63.35.239.63",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "SOPORTE",
+            "database": "soporte",
+            "username": "soporte"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "CURSO-DATABASE",
+            "database": "${workspaceFolder:curso-desarrollo-web-en-python}/database.db"
+        }
+    ]
+}
