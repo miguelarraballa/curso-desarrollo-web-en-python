@@ -21,13 +21,17 @@ class Task:
         results = self.db.query(query) 
         self.db.commit()
         tasks = results.fetchall()
-        for task in tasks:
-            if task[2] == 0: 
-                state = "PENDIENTE"
-            else:
-                state = "TERMINADO"
-                
-            print(f"{state} -> {task[0]: 2} - {task[1]}")
+
+        if not tasks:
+            print("Sin tareas aún")
+        else: 
+            for task in tasks:
+                if task[2] == 0: 
+                    state = "PENDIENTE"
+                else:
+                    state = "TERMINADO"
+                    
+                print(f"{state} -> {task[0]: 2} - {task[1]}")
         
     
     def update(self,id):
