@@ -25,7 +25,7 @@ class Connection:
         queries.append (""" CREATE TABLE IF NOT EXISTS tasks (
             ID              INTEGER PRIMARY KEY AUTOINCREMENT,
             task            TEXT NOT NULL,
-            active          INTEGER NOT NULL DEFAULT 0) """)
+            finish          INTEGER NOT NULL DEFAULT 0) """)
  
         try:
             # Open connection
