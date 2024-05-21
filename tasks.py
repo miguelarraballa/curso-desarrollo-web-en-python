@@ -1,7 +1,6 @@
-import models.database as database
+import database as database
 
-class TaskModel:
-    
+class Task:
     def __init__(self,name):
         self.table = "tasks" 
         self.db = database.Connection(name)
@@ -23,8 +22,8 @@ class TaskModel:
                 state = "PENDIENTE"
             else:
                 state = "TERMINADO"
-                 
-            print(f"{state} -> {task[0]: 2} - {task[1]}")
+        
+        print(f"{state} -> {task[0]: 2} - {task[1]}")
         
     
     def update(self,id,data):

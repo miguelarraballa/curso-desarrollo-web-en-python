@@ -1,4 +1,5 @@
-from models.task import TaskModel as task
+from tasks import Task 
+
 
 def choices(i=0):
 
@@ -24,7 +25,7 @@ def choices(i=0):
             ++i
             choices(i)
 i = 0
-tasks = task("database.db")
+tasks = Task("database.db")
 print ("*********************")
 print ("** LISTA DE TAREAS **")
 print ("*********************")
